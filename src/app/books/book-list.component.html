@@ -1,0 +1,33 @@
+<h2>Book List</h2>
+<div class="container">
+ <div *ngIf="show">
+<table class="table table-bordered table-striped">
+<tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Isbn</th>
+</tr>
+
+<tr *ngFor="let book of books">
+<td>{{book.id}}</td>
+<td>{{book.title | uppercase | slice:1:7}}</td>
+<td>{{book.author}}</td>
+<td>{{book.isbn }}</td>
+
+</tr>
+
+
+
+</table>
+some image <img [src]="imageUrl" [width]="imageWi" [height]="imageHi"/>
+</div>
+<button (click)="onButtonClick()">Click here</button>
+
+Title to be searched
+<input type="text" name="titleToBeSearched" [(ngModel)]="titleToBeSearched">
+
+You have entered
+{{titleToBeSearched}}
+</div>
+

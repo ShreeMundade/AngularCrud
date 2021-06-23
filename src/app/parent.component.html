@@ -1,0 +1,9 @@
+<h1>Parent component</h1>
+<child-component 
+[reviews]="numberOfReviews"
+(sendReviewsEvent)="receiveDataFromChild($event)"
+(fullNameEvent)="receiveFullName($event)">
+</child-component><br>
+Number of Reviews{{numberOfReviews}}<br>
+Student Full Name :
+{{studentFullName}}

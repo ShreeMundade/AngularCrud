@@ -1,0 +1,19 @@
+<div class="container">
+<button 
+class="btn btn-danger" 
+style="width:100px"
+(click)="addCustomer()">Add Customer</button>
+
+<table class="table table-bordered table-striped">
+<tr><th colspan="2">Customer List</th></tr>
+<tr><th colspan="2">Username</th></tr>
+
+<tr *ngFor="let customer of customers">
+    <td><a [routerLink]="['/customers/',customer.id] ">{{customer.username}}</a></td>
+    <td ngClass="td1"><button (click)="onEdit(customer)">Edit</button></td>
+    <td ngClass="td1"><button (click)="onDelete(customer)">Delete</button></td>
+    
+</tr>
+</table>
+
+</div>

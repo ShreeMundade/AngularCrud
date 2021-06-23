@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            ngSwitch 
+        </div>
+    <div class="card-body">
+
+        Enter value<input type="text" name="num1" [(ngModel)]="num1"/>
+
+        <div [ngSwitch]="num1">
+            <div *ngSwitchCase="1">One</div>
+            <div *ngSwitchCase="2">Two</div>
+            <div *ngSwitchCase="3">Three</div>
+            <div *ngSwitchDefault>Some other value</div>
+
+
+        </div>
+    </div>
+    </div>
+
+
+</div>

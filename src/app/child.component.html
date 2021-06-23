@@ -1,0 +1,17 @@
+<div class="container">
+
+<div class="card card-block" cHover><div class="card-body">some data
+
+</div></div>
+
+
+<p cHover>A new para</p>
+<button (click)="sendReviews()">Send Reviews</button>
+
+First Name <input [ngStyle]="{'color':'red'}" type="text" name="firstName" [(ngModel)]="firstName"/>
+Last Name <input [ngClass]="{bordered:true}" type="text" name="lastName" [(ngModel)]="lastName"/>
+
+<button (click)="sendFullName()">Send Name</button>
+
+    
+</div>
